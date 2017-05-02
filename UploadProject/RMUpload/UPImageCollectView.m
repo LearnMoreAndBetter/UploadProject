@@ -6,12 +6,9 @@
 //  Copyright © 2017年 wanglin. All rights reserved.
 //
 
-#define kMaxImageCount 9 //最大图片个数
-#define kImageLineCount 3 //每行图片个数
-#define kLineSpace 4.0    //间距
-
 #import "UPImageCollectView.h"
 #import "UPImageCollectionViewCell.h"
+#import "CommonHeader.h"
 
 @interface UPImageCollectView()<UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 
@@ -37,7 +34,7 @@
 #pragma mark -- UICollectionViewDataSource
 //定义展示的UICollectionViewCell的个数
 - (NSInteger) collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
-	return self.imageLists.count < kMaxImageCount ? (self.imageLists.count + 1) : kMaxImageCount;
+	return self.imageLists.count < kUPMaxImageCount ? (self.imageLists.count + 1) : kUPMaxImageCount;
 }
 
 //每个UICollectionView展示的内容
@@ -50,9 +47,9 @@
 	cell.upDetailLabel.text = nil;
 	cell.upDetailLabel.backgroundColor = [UIColor clearColor];
 	
-	if (self.imageLists.count < kMaxImageCount && indexPath.item == self.imageLists.count) {
+	if (self.imageLists.count < kUPMaxImageCount && indexPath.item == self.imageLists.count) {
 		cell.upImageView.backgroundColor = [UIColor greenColor];
-		cell.upDetailLabel.text = [NSString stringWithFormat:@"最多上传%d张", kMaxImageCount];
+		cell.upDetailLabel.text = [NSString stringWithFormat:@"最多上传%d张", kUPMaxImageCount];
 		cell.upDetailLabel.backgroundColor = [UIColor grayColor];
 	}else{
 		cell.upImageView.image = self.imageLists[indexPath.item][@"image"];
@@ -63,13 +60,13 @@
 }
 //定义每个UICollectionView的大小
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
-	CGFloat cellWidth = self.bounds.size.width/kImageLineCount - kLineSpace * (kImageLineCount - 1)/kImageLineCount;
+	CGFloat cellWidth = self.bounds.size.width/kUPImageLineCount - kUPLineSpace * (kUPImageLineCount - 1)/kUPImageLineCount;
 	return CGSizeMake(cellWidth, cellWidth);
 }
 
 //UICollectionView被选中时调用的方法
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-	if (self.imageLists.count < kMaxImageCount && indexPath.item == self.imageLists.count) {
+	if (self.imageLists.count < kUPMaxImageCount && indexPath.item == self.imageLists.count) {
 		NSLog(@"添加照片");
 		if (self.imageBlock) {
 			self.imageBlock();
@@ -83,10 +80,10 @@
 }
 
 - (CGFloat)collectionViewHeight{
-	CGFloat cellWidth = self.bounds.size.width/kImageLineCount - kLineSpace;
-	NSInteger items = self.imageLists.count < kMaxImageCount ? (self.imageLists.count  + 1) : kMaxImageCount;
-	NSInteger row = (items + kImageLineCount - 1)/kImageLineCount;
-	return row * (cellWidth + kLineSpace);
+	CGFloat cellWidth = self.bounds.size.width/kUPImageLineCount - kUPLineSpace;
+	NSInteger items = self.imageLists.count < kUPMaxImageCount ? (self.imageLists.count  + 1) : kUPMaxImageCount;
+	NSInteger row = (items + kUPImageLineCount - 1)/kUPImageLineCount;
+	return row * (cellWidth + kUPLineSpace);
 }
 
 #pragma mark- getter
@@ -95,8 +92,8 @@
 		//初始化
 		UICollectionViewFlowLayout *flowLayout=[[UICollectionViewFlowLayout alloc] init];
 		[flowLayout setScrollDirection:UICollectionViewScrollDirectionVertical];
-		[flowLayout setMinimumLineSpacing:kLineSpace];
-		[flowLayout setMinimumInteritemSpacing:kLineSpace];
+		[flowLayout setMinimumLineSpacing:kUPLineSpace];
+		[flowLayout setMinimumInteritemSpacing:kUPLineSpace];
 		_collectionView = [[UICollectionView alloc]initWithFrame:self.bounds collectionViewLayout:flowLayout];
 		_collectionView.backgroundColor = [UIColor whiteColor];
 		//设置代理
