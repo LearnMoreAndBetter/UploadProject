@@ -7,8 +7,9 @@
 //
 //分类实现添加删除图片功能
 #import "UploadImageVC.h"
+#import "UPClipImageVC.h"
 
-@interface UploadImageVC (UploadImage)
+@interface UploadImageVC (UploadImage)<UPClipImageVCDelegate>
 
 @property (assign, nonatomic)NSNumber *deleteIndex;//删除第几张照片
 

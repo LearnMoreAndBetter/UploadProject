@@ -39,7 +39,7 @@ static PickPhotoManager *pickPhotoManager;
 	
 	UIImagePickerController *picker = [[UIImagePickerController alloc] init];
 	picker.delegate = self;
-	picker.allowsEditing = YES;
+	picker.allowsEditing = NO;
 	picker.sourceType = sourseType;
 	[[PickPhotoManager pickPhotoManager].preController presentViewController:picker animated:YES completion:nil];
 }

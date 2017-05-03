@@ -22,7 +22,6 @@
 	self.title = @"上传照片";
 	self.automaticallyAdjustsScrollViewInsets = NO;
 	
-	[self.view addSubview:self.displayView];
 	[self updateDisplayViewFrame];
 	
 	[self upImageBlockAction];
@@ -42,6 +41,7 @@
 - (UPImageCollectView *)displayView{
 	if (!_displayView) {
 		_displayView = [[UPImageCollectView alloc]initWithFrame:CGRectMake(0, 100, self.view.frame.size.width, 120)];
+		[self.view addSubview:_displayView];
 	}
 	return _displayView;
 }

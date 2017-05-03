@@ -52,7 +52,7 @@
 		cell.upDetailLabel.text = [NSString stringWithFormat:@"最多上传%d张", kUPMaxImageCount];
 		cell.upDetailLabel.backgroundColor = [UIColor grayColor];
 	}else{
-		cell.upImageView.image = self.imageLists[indexPath.item][@"image"];
+		cell.upImageView.image = self.imageLists[indexPath.item];
 	}
 	
 	

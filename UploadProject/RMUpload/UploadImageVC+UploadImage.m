@@ -10,6 +10,7 @@
 #import <objc/runtime.h>
 #import "PickPhotoManager.h"
 
+
 static const void *DeleteIndexKey = &DeleteIndexKey;
 
 @implementation UploadImageVC (UploadImage)
@@ -48,9 +49,12 @@ static const void *DeleteIndexKey = &DeleteIndexKey;
 	{
 		dispatch_async(dispatch_get_main_queue(), ^{
 			UIImage *image = [info objectForKey:UIImagePickerControllerOriginalImage];
-			NSDictionary *dic = @{@"image" : image};
-			[self.displayView.imageLists addObject:dic];
-			[self reloadDisplayView];
+			
+			UPClipImageVC *imageVC = [[UPClipImageVC alloc]init];
+			imageVC.clipImage = image;
+			imageVC.delegate = self;
+			UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:imageVC];
+			[self presentViewController:nav animated:YES completion:nil];
 		});
 	};
 	UIAlertController *alertController = [UIAlertController alertControllerWithTitle:nil message:nil preferredStyle:UIAlertControllerStyleActionSheet];
@@ -80,5 +84,17 @@ static const void *DeleteIndexKey = &DeleteIndexKey;
 	[self presentViewController:alertController animated:YES completion:nil];
 }
 
+
+#pragma mark- UPClipImageVCDelegate
+- (void)ClipImageVCDidCancel:(UPClipImageVC *)clipImageVC{
+	[self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)ClipImageVC:(UPClipImageVC *)clipImageVC didFinish:(UIImage *)editImage{
+	[self dismissViewControllerAnimated:YES completion:^{
+		[self.displayView.imageLists addObject:editImage];
+		[self reloadDisplayView];
+	}];
+}
 
 @end

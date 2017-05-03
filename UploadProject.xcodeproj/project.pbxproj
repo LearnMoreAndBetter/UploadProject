@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		C2AFF29C1EB88CC000034C5C /* PickPhotoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C2AFF2921EB88CC000034C5C /* PickPhotoManager.m */; };
-		C2AFF29D1EB88CC000034C5C /* UPImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2AFF2941EB88CC000034C5C /* UPImageCollectionViewCell.m */; };
-		C2AFF29E1EB88CC000034C5C /* UPImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2AFF2951EB88CC000034C5C /* UPImageCollectionViewCell.xib */; };
-		C2AFF29F1EB88CC000034C5C /* UPImageCollectView.m in Sources */ = {isa = PBXBuildFile; fileRef = C2AFF2971EB88CC000034C5C /* UPImageCollectView.m */; };
 		C2AFF2A01EB88CC000034C5C /* UploadImageVC+UploadImage.m in Sources */ = {isa = PBXBuildFile; fileRef = C2AFF2991EB88CC000034C5C /* UploadImageVC+UploadImage.m */; };
 		C2AFF2A11EB88CC000034C5C /* UploadImageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C2AFF29B1EB88CC000034C5C /* UploadImageVC.m */; };
+		C2B81C7B1EB96C0B00B52D0F /* UPImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2B81C771EB96C0B00B52D0F /* UPImageCollectionViewCell.m */; };
+		C2B81C7C1EB96C0B00B52D0F /* UPImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2B81C781EB96C0B00B52D0F /* UPImageCollectionViewCell.xib */; };
+		C2B81C7D1EB96C0B00B52D0F /* UPImageCollectView.m in Sources */ = {isa = PBXBuildFile; fileRef = C2B81C7A1EB96C0B00B52D0F /* UPImageCollectView.m */; };
+		C2B81C801EB96E4D00B52D0F /* UPClipImageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C2B81C7F1EB96E4D00B52D0F /* UPClipImageVC.m */; };
 		C2E0FD051EB81D3500CCD96F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E0FD041EB81D3500CCD96F /* main.m */; };
 		C2E0FD081EB81D3500CCD96F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E0FD071EB81D3500CCD96F /* AppDelegate.m */; };
 		C2E0FD0E1EB81D3500CCD96F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2E0FD0C1EB81D3500CCD96F /* Main.storyboard */; };
@@ -24,15 +25,17 @@
 		C2AFF2901EB88CC000034C5C /* CommonHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonHeader.h; sourceTree = "<group>"; };
 		C2AFF2911EB88CC000034C5C /* PickPhotoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickPhotoManager.h; sourceTree = "<group>"; };
 		C2AFF2921EB88CC000034C5C /* PickPhotoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickPhotoManager.m; sourceTree = "<group>"; };
-		C2AFF2931EB88CC000034C5C /* UPImageCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPImageCollectionViewCell.h; sourceTree = "<group>"; };
-		C2AFF2941EB88CC000034C5C /* UPImageCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPImageCollectionViewCell.m; sourceTree = "<group>"; };
-		C2AFF2951EB88CC000034C5C /* UPImageCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UPImageCollectionViewCell.xib; sourceTree = "<group>"; };
-		C2AFF2961EB88CC000034C5C /* UPImageCollectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPImageCollectView.h; sourceTree = "<group>"; };
-		C2AFF2971EB88CC000034C5C /* UPImageCollectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPImageCollectView.m; sourceTree = "<group>"; };
 		C2AFF2981EB88CC000034C5C /* UploadImageVC+UploadImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UploadImageVC+UploadImage.h"; sourceTree = "<group>"; };
 		C2AFF2991EB88CC000034C5C /* UploadImageVC+UploadImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UploadImageVC+UploadImage.m"; sourceTree = "<group>"; };
 		C2AFF29A1EB88CC000034C5C /* UploadImageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploadImageVC.h; sourceTree = "<group>"; };
 		C2AFF29B1EB88CC000034C5C /* UploadImageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UploadImageVC.m; sourceTree = "<group>"; };
+		C2B81C761EB96C0B00B52D0F /* UPImageCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPImageCollectionViewCell.h; sourceTree = "<group>"; };
+		C2B81C771EB96C0B00B52D0F /* UPImageCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPImageCollectionViewCell.m; sourceTree = "<group>"; };
+		C2B81C781EB96C0B00B52D0F /* UPImageCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UPImageCollectionViewCell.xib; sourceTree = "<group>"; };
+		C2B81C791EB96C0B00B52D0F /* UPImageCollectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPImageCollectView.h; sourceTree = "<group>"; };
+		C2B81C7A1EB96C0B00B52D0F /* UPImageCollectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPImageCollectView.m; sourceTree = "<group>"; };
+		C2B81C7E1EB96E4D00B52D0F /* UPClipImageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPClipImageVC.h; sourceTree = "<group>"; };
+		C2B81C7F1EB96E4D00B52D0F /* UPClipImageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPClipImageVC.m; sourceTree = "<group>"; };
 		C2E0FD001EB81D3500CCD96F /* UploadProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UploadProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2E0FD041EB81D3500CCD96F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C2E0FD061EB81D3500CCD96F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -57,6 +60,7 @@
 		C2AFF28F1EB88CC000034C5C /* RMUpload */ = {
 			isa = PBXGroup;
 			children = (
+				C2B81C751EB96C0B00B52D0F /* View */,
 				C2AFF2901EB88CC000034C5C /* CommonHeader.h */,
 				C2AFF29A1EB88CC000034C5C /* UploadImageVC.h */,
 				C2AFF29B1EB88CC000034C5C /* UploadImageVC.m */,
@@ -64,13 +68,22 @@
 				C2AFF2991EB88CC000034C5C /* UploadImageVC+UploadImage.m */,
 				C2AFF2911EB88CC000034C5C /* PickPhotoManager.h */,
 				C2AFF2921EB88CC000034C5C /* PickPhotoManager.m */,
-				C2AFF2961EB88CC000034C5C /* UPImageCollectView.h */,
-				C2AFF2971EB88CC000034C5C /* UPImageCollectView.m */,
-				C2AFF2931EB88CC000034C5C /* UPImageCollectionViewCell.h */,
-				C2AFF2941EB88CC000034C5C /* UPImageCollectionViewCell.m */,
-				C2AFF2951EB88CC000034C5C /* UPImageCollectionViewCell.xib */,
+				C2B81C7E1EB96E4D00B52D0F /* UPClipImageVC.h */,
+				C2B81C7F1EB96E4D00B52D0F /* UPClipImageVC.m */,
 			);
 			path = RMUpload;
+			sourceTree = "<group>";
+		};
+		C2B81C751EB96C0B00B52D0F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C2B81C761EB96C0B00B52D0F /* UPImageCollectionViewCell.h */,
+				C2B81C771EB96C0B00B52D0F /* UPImageCollectionViewCell.m */,
+				C2B81C781EB96C0B00B52D0F /* UPImageCollectionViewCell.xib */,
+				C2B81C791EB96C0B00B52D0F /* UPImageCollectView.h */,
+				C2B81C7A1EB96C0B00B52D0F /* UPImageCollectView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		C2E0FCF71EB81D3500CCD96F = {
@@ -172,7 +185,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2E0FD131EB81D3500CCD96F /* LaunchScreen.storyboard in Resources */,
-				C2AFF29E1EB88CC000034C5C /* UPImageCollectionViewCell.xib in Resources */,
+				C2B81C7C1EB96C0B00B52D0F /* UPImageCollectionViewCell.xib in Resources */,
 				C2E0FD101EB81D3500CCD96F /* Assets.xcassets in Resources */,
 				C2E0FD0E1EB81D3500CCD96F /* Main.storyboard in Resources */,
 			);
@@ -185,13 +198,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2B81C7D1EB96C0B00B52D0F /* UPImageCollectView.m in Sources */,
 				C2E0FD081EB81D3500CCD96F /* AppDelegate.m in Sources */,
-				C2AFF29D1EB88CC000034C5C /* UPImageCollectionViewCell.m in Sources */,
-				C2AFF29F1EB88CC000034C5C /* UPImageCollectView.m in Sources */,
 				C2AFF29C1EB88CC000034C5C /* PickPhotoManager.m in Sources */,
+				C2B81C801EB96E4D00B52D0F /* UPClipImageVC.m in Sources */,
 				C2AFF2A01EB88CC000034C5C /* UploadImageVC+UploadImage.m in Sources */,
 				C2E0FD051EB81D3500CCD96F /* main.m in Sources */,
 				C2AFF2A11EB88CC000034C5C /* UploadImageVC.m in Sources */,
+				C2B81C7B1EB96C0B00B52D0F /* UPImageCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
